@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 #   ~ SUBSECTION 1 ~
 
 #load selfie and convert it from bgr to hls
-img = cv2.imread(r"C:\Users\sandr\Documents\FACULTATE\ANUL 4\SEM 1\IPIVA\TEMA 1\sid2.jpeg")
+img = cv2.imread(r"C:\Users\you\Documents\photo.jpeg")
 hls = cv2.cvtColor(img, cv2.COLOR_BGR2HLS)
 
 #split channels and apply clahe on the L channel
@@ -56,7 +56,7 @@ plt.show()
 #   ~ SUBSECTION 3 ~
 
 #load background image
-background = cv2.imread(r"C:\Users\sandr\Documents\FACULTATE\ANUL 4\SEM 1\IPIVA\TEMA 1\Background_images\landscape7.jpg")
+background = cv2.imread(r"C:\Users\you\Documents\landscape.jpg")
 
 #resize the cartoonized image
 imgResize = cv2.resize(imgCartoon,(200,200))
